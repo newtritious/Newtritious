@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/newtritious/Newtritious#readme",
   "devDependencies": {
-    "concurrently": "^7.4.0",
-    "nodemon": "^2.0.19"
+    "concurrently": "^7.4.0"
   }
 }
