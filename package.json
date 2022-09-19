@@ -21,5 +21,8 @@
   "homepage": "https://github.com/newtritious/Newtritious#readme",
   "devDependencies": {
     "concurrently": "^7.4.0"
+  },
+  "dependencies": {
+    "express-session": "^1.17.3"
   }
 }

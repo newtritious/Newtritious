@@ -4,11 +4,20 @@ const cookieParser = require('cookie-parser');
 const path = require('path');
 const app = express();
 const routes = require('./routes');
+const session = require('express-session');
 require('dotenv').config({ path: path.resolve(__dirname, '..', '.env')});
 require('./db/mongoose');
 
 // Declare value for PORT
 const PORT = process.env.PORT || 3001;
+
+// Express-session middleware
+app.use(session({
+  secret: process.env.SECRET_STRING,
+  resave: false,
+  saveUninitialized: false,
+  cookie: { secure: true }
+}));
 
 // Express middleware
 app.use(express.urlencoded({ extended: true }));
