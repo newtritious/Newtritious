@@ -1,0 +1,28 @@
+{
+  "name": "newtritious",
+  "version": "1.0.0",
+  "description": "Nutrition app built by Trilogy bootcamp alumni to let a user find their caloric needs (using a calculator) and set a calorie goal.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newtritious/Newtritious.git"
+  },
+  "author": "Newtritious",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newtritious/Newtritious/issues"
+  },
+  "homepage": "https://github.com/newtritious/Newtritious#readme",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  },
+  "dependencies": {
+    "express-session": "^1.17.3"
+  }
+}
