@@ -23,6 +23,7 @@
     "concurrently": "^7.4.0"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.15",
     "express-session": "^1.17.3"
   }
 }
